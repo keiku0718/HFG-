@@ -1,0 +1,315 @@
+@charset "UTF-8";
+/******************************/
+/*ページ設定ここから*/
+/******************************/
+html {
+
+}
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+a {
+    text-decoration: none;
+}
+
+/******************************/
+/*ページ設定ここまで*/
+/******************************/
+
+/******************************/
+/*ヘッダーここから*/
+/******************************/
+
+header {
+    background-color:rgba(255, 255, 255, 0.7);
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 120px;
+    position: fixed;
+
+}/*透明のnav*/
+
+.logo {
+    width: 75%;
+    margin-top: 10px;
+    margin-left: 20px;
+}/*logoの調整*/
+
+.indexflex {
+    display: flex;
+}/*logo, ul, SNSを横並べ*/
+
+ul li {
+    display: inline;
+}/*ul要素を横並べ*/
+
+.headerLink {
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 110%;
+}/*リンクを中央へ*/
+
+.headerLink a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: monospace;
+}/*リンクの下線を消す*/
+.current {
+    border-bottom: solid rgb(214, 2, 2);
+}/*現在開いてるページ*/
+
+.headerLink li::after {
+    content: '　／　';
+}/*li要素を'　／　'で区切る*/
+
+li:last-child::after {
+    content: none;
+}/*liの最後の要素だけ区切らない*/
+
+.imgsns {
+    display: inline;
+}/*sns画像をinline*/
+
+.imgsns img {
+    margin-top: 30px;
+    margin-right: auto;
+}/*snsアイコンの調整*/
+
+.twitter {width: 30px;}
+.instagram {width: 30px;}
+.line {width: 30px;}
+
+/******************************/
+/*ヘッダーここまで*/
+/******************************/
+
+/******************************/
+/*メインここから*/
+/******************************/
+
+main {
+    padding-top: 120px;
+}/*headerとmainが重ならないように*/
+
+.point b {
+    font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+    font-size: 16px;
+    color: rgb(212, 2, 2);
+    margin-left: 12px;
+    margin-right: 12px;
+}/*ポイントカードの文字調整*/
+
+.point {
+    text-align: center;
+    border: 2px solid black;
+    display:inline-block;
+}/*ポイントカードのborder*/
+
+.center {
+    text-align: center;
+    margin-top: 50px;
+}/*pointの親要素をcenter*/
+
+.title {
+    font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}/*Newsのp*/
+
+.NewsFlex {
+    display: flex;
+    justify-content: center;
+}/*Newsの要素flex*/
+
+.day {
+    color: gray;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}/*day*/
+
+.houjicha {
+     width: 280px;
+    height: 210px;
+    margin-right: 50px;
+}/*ほうじ茶*/
+.hukubukuro {
+    width: 280px;
+   height: 210px;
+   margin-right: 50px;
+}/*福袋*/
+.otoshidama {
+    width: 280px;
+   height: 210px;
+}/*お年玉*/
+
+.News_info {
+    width: 280px;
+}/*テキストを折り返す*/
+
+.notice b {
+    font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+    font-size: 16px;
+    margin-left: 114px;
+    margin-right: 114px;
+    vertical-align: middle;
+    color: black;
+
+}/*お知らせの文字調整*/
+
+.notice {
+    text-align: center;
+    border: 2px solid black;
+    display:inline-block;
+}/*お知らせのborder*/
+
+.aboutflex {
+    display: flex;
+}
+
+.aboutcell h1 {
+    font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+    font-size: 40px;
+    padding: 20px 0px 30px;
+}
+
+.aboutcell p {
+    font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+    font-size: 16px;
+    line-height: 1.8em;
+}
+
+.aboutText p {
+    text-align: left;
+}
+
+.aboutText {
+    text-align: center;
+    padding: 0px 160px 30px 160px;
+}/*105*/
+
+.BullPulimg {
+    width: 650px;
+    height: 400px;
+
+}
+
+.aboutcell {
+    width: 50%;
+}/*flex内の要素を画面半分に*/
+
+.aboutcell a {
+    font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: block;
+    
+    letter-spacing: 5px;
+}
+
+.look {
+    text-align: right;
+    margin-right: 150px;
+}
+.chaba {
+    font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+    text-align: center;
+}
+
+.chaba img{
+    width: 670px;
+    height: 250px;
+}
+
+.wide img{
+    margin-top: 100px;
+    height: 228px;
+    width: 100%;
+}
+
+.company {
+    margin-top: 100px;
+    padding-bottom: 150px;
+}
+
+.centerinfo {
+    font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+    text-align: center;
+}
+
+.drinklink {
+    padding-bottom: 150px;
+}
+
+.cell{
+    text-align: center;
+}
+
+/******************************/
+/*メインここまで*/
+/******************************/
+
+/******************************/
+/*フッターここから*/
+/******************************/
+
+footer {
+    background-color: #333333;
+    padding-bottom: 20px;
+}
+
+.flex {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.flex li {
+    font-size: 12px;
+}
+
+footer .copy1 {
+    margin-left: 15%;
+    font-size: 12px;
+}
+
+footer .copy2 {
+    margin-left: 20%;
+    font-size: 12px;
+}
+
+footer .copyDrink {
+    margin-left: 500%;
+}
+
+footer li {
+    margin-right: 30px;
+    color: #AAAAAA;
+}
+
+footer span {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "Yu Gothic", YuGothic, "Hiragino Sans", "ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    background-color: #0FA599;
+    margin-left: 30px;
+    padding: 8px 8px 8px 8px;
+    font-size: 14px;
+    
+}
+
+/******************************/
+/*フッターここまで*/
+/******************************/
+
+@media screen and (max-width:960px){
+
+}
