@@ -21,6 +21,7 @@ a {
 /*header*/
 header {
   background-color: rgb(82, 80, 80);
+  
 }/*headerの背景色*/
 
 /*同じタグでも別にすれば
@@ -35,6 +36,7 @@ header {
   font-family: 'HG正楷書体-PRO';
   font-size: 20px;
   /*fontの設定*/
+  z-index: 10;/*7月12日変更*/
 }
 
 .headerL {
@@ -76,12 +78,13 @@ header a img {
 /*main*/
 
 main {
-  
+    padding-top: 50px;/*7月12日変更*/
 }
 
 section .sliderMain {
   height: 40vw;
   padding: 4vw 4vw;
+  
   /*sliderの横幅*/
 }
 
