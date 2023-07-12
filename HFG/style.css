@@ -29,7 +29,8 @@ header {
 header {
   display: flex;
   justify-content: center;
-  position: relative;
+  position: fixed;
+  width: 100%;
   /*headerの要素の混在*/
   font-family: 'HG正楷書体-PRO';
   font-size: 20px;
