@@ -5,15 +5,15 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta name=”robots” content=”noindex” />
         <meta name=”robots” content=”noindex,nofollow“>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/png" href="img/icon.jpg"><!--サイトアイコン-->
+        <link rel="stylesheet" href="contact.css">
+        <link rel="icon" type="image/png" href="img/icon.png"><!--サイトアイコン-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
         <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
         <title>株式会社HFG越後</title>
     </head>
     <body>
         <header><!--headerはfixed-絶対固定-->
-            <div class="headerL"><a href=""><img src="img/logo.jpg" alt=""></a></div>
+            <div class="headerL"><a href="index.html"><img src="img/logo.jpg" alt=""></a></div>
             <div class="headerC">
                 <nav>
                     <ul class="link">
@@ -32,7 +32,99 @@
             </div>
         </header>
         <maiin>
-            
+            <h1 class="form-title">お問い合わせ</h1>
+            <form method="GET">
+                <div class="form">
+                    <div class="form-item">
+                        <p class="form-label">お名前　<span class="form-label-required">必須</span></p>
+                        <div>
+                            <input type="text" class="form-input" placeholder="山田　太郎">
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <p class="form-label">お名前（かな）<span class="form-label-required">必須</span></p>
+                        <div>
+                            <input type="text" class="form-input" placeholder="やまだ　たろう">
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <p class="form-label">メールアドレス　<span class="form-label-required">必須</span></p>
+                        <div class>
+                            <input type="text" class="form-input" placeholder="hakohugu@example.com">
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <p class="form-label">郵便番号</p>
+                        <div>
+                            <input type="text" class="form-input" placeholder="7190243">
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <p class="form-label-address">住所</p>
+                        <div>
+                            <p>都道府県<select class="form-select">
+                                <option value="1">北海道</option>
+                                <option value="2">青森県</option>
+                                <option value="3">岩手県</option>
+                                <option value="4">宮城県</option>
+                                <option value="5">秋田県</option>
+                                <option value="6">山形県</option>
+                                <option value="7">福島県</option>
+                                <option value="8">茨城県</option>
+                                <option value="9">栃木県</option>
+                                <option value="10">群馬県</option>
+                                <option value="11">埼玉県</option>
+                                <option value="12">千葉県</option>
+                                <option value="13">東京都</option>
+                                <option value="14">神奈川県</option>
+                                <option value="15">新潟県</option>
+                                <option value="16">富山県</option>
+                                <option value="17">石川県</option>
+                                <option value="18">福井県</option>
+                                <option value="19">山梨県</option>
+                                <option value="20">長野県</option>
+                                <option value="21">岐阜県</option>
+                                <option value="22">静岡県</option>
+                                <option value="23">愛知県</option>
+                                <option value="24">三重県</option>
+                                <option value="25">滋賀県</option>
+                                <option value="26">京都府</option>
+                                <option value="27">大阪府</option>
+                                <option value="28">兵庫県</option>
+                                <option value="29">奈良県</option>
+                                <option value="30">和歌山県</option>
+                                <option value="31">鳥取県</option>
+                                <option value="32">島根県</option>
+                                <option value="33">岡山県</option>
+                                <option value="34">広島県</option>
+                                <option value="35">山口県</option>
+                                <option value="36">徳島県</option>
+                                <option value="37">香川県</option>
+                                <option value="38">愛媛県</option>
+                                <option value="39">高知県</option>
+                                <option value="40">福岡県</option>
+                                <option value="41">佐賀県</option>
+                                <option value="42">長崎県</option>
+                                <option value="43">熊本県</option>
+                                <option value="44">大分県</option>
+                                <option value="45">宮崎県</option>
+                                <option value="46">鹿児島県</option>
+                                <option value="47">沖縄県</option>
+                            </select></p>
+                            <input type="text" class="form-input" placeholder="浅口市鴨方町みどりケ丘４丁目５３８番地">
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <p class="form-label-contact">お問い合わせ内容　<span class="form-label-required">必須</span><p>
+                        <div>
+                            <textarea class="form-input-area"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" onclick="submit();" class="form-submit">送信</button>
+                </div>
+            </form>
         </main>
         <footer>
             <p>&copy;Copyright HFG越後</p>
